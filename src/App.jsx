@@ -1,6 +1,8 @@
 import { useRef, useEffect } from "react";
-import mapboxgl from "mapbox-gl";
 import { useAuth } from "./context/auth";
+import mapboxgl from "mapbox-gl";
+
+import MenuIcon from "./assets/icons/menuIcon";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -35,7 +37,9 @@ function App() {
     <div className="h-screen">
       <div className="absolute top-[59px] z-10 flex w-full justify-between bg-transparent pl-[20px] pr-[20px]">
         <button className="h-[50px] w-[50px] rounded-full border-[1px] border-[#EAC00F] bg-blue-500 shadow-md"></button>
-        <button className="bg-blue-500">teste</button>
+        <button className="flex h-[60px] w-[60px] items-center justify-center bg-[#181A18CC]">
+          <MenuIcon />
+        </button>
       </div>
       <div
         className="absolute w-full"
